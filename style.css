@@ -8,6 +8,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin: 0px;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -38,7 +40,7 @@ body {
 }
 
 .logo {
-  background: rgb(199, 194, 194);
+  background: #d8d8d8;
   padding: 5px 30px;
   color: black;
   text-decoration: none;
@@ -87,11 +89,6 @@ section:nth-of-type(odd) {
   justify-content: center;
 }
 
-.main-section-grid {
-  display: grid;
-  justify-content: center;
-}
-
 .main-container {
   max-width: 1200px;
   padding: 10vh 10px;
@@ -126,9 +123,6 @@ section:nth-of-type(odd) {
   align-self: center;
 }
 
-.main-container h3 {
-}
-
 .small-images-container img {
   flex-basis: 170px;
   margin: 12px;
@@ -146,8 +140,9 @@ section:nth-of-type(odd) {
   text-align: center;
 }
 
-#medium-images {
-  background: #f8f8f8;
+.main-section-grid {
+  display: grid;
+  justify-content: center;
 }
 
 .medium-images-article {
@@ -166,6 +161,7 @@ section:nth-of-type(odd) {
 .medium-images-article-images {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
 }
@@ -182,6 +178,8 @@ section:nth-of-type(odd) {
   position: absolute;
   height: 100%;
   width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .medium-images-article-images .image-wrapper:nth-child(3) {
@@ -192,21 +190,23 @@ section:nth-of-type(odd) {
   grid-column: span 2;
 }
 
+.last-article-grid {
+  display: grid;
+}
+
 .last-article {
-  height: 400px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10vw;
+  grid-gap: 8vw;
+  min-height: 600px;
 }
 
-.last-article .image-wrapper {
-  /* grid-row: 1 / 4; */
-}
+/* place-self: center center; */
 
 .last-article-text {
   align-self: center;
-  justify-self: center;
+  max-width: 40ch;
 }
 
 .bottom-images {
@@ -235,15 +235,12 @@ section:nth-of-type(odd) {
 }
 
 .bottom-images-text {
-  /* grid-row: 3 / 5;
-  grid-column: 3 / 4; */
   justify-self: center;
   align-self: center;
-  margin: -100px;
-  padding: 20px;
+  margin: 0px -4em;
+  padding: 4em;
   z-index: 1;
   background: white;
-  max-height: 200px;
 }
 
 .images-right {
@@ -272,7 +269,7 @@ section:nth-of-type(odd) {
   flex-basis: 300px;
   height: 300px;
   text-align: center;
-  background: #e1e1e1;
+  background: #bdbdbd;
 }
 
 .footer-nav a {
