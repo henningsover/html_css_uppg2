@@ -17,10 +17,6 @@ h3 {
 }
 
 @media (min-width: 388px) {
-  h1 {
-    font-size: 3rem;
-  }
-
   h2 {
     font-size: 2rem;
   }
@@ -68,7 +64,7 @@ body {
   padding: 0 5px;
 }
 
-@media (min-width: 388px) {
+@media (min-width: 396px) {
   .top-header {
     flex-flow: row;
   }
@@ -94,24 +90,37 @@ section:nth-of-type(odd) {
   flex-basis: 600px;
   align-items: center;
   justify-content: center;
-  flex-flow: column;
+  /* flex-flow: column; */
 }
 
 .main-header h1,
 .main-header p {
   margin: 0px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .main-header-content {
   display: flex;
   flex-flow: column;
-  flex-basis: 50%;
+  flex-basis: 37ch;
   justify-content: center;
   text-align: center;
+  margin: 0px;
+}
+@media (min-width: 515px) {
+  .main-header-content {
+    display: flex;
+    /* Kan jag göra flex-basis responsiv? */
+    flex-basis: 50ch;
+    text-align: center;
+    margin: auto;
+  }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
-@media (min-width: 388px) {
+/* @media (min-width: 388px) {
   .main-header {
     flex-flow: row;
   }
@@ -119,7 +128,7 @@ section:nth-of-type(odd) {
   .main-header p {
     padding: 0px;
   }
-}
+} */
 
 @media (min-width: 388px) {
   .main-section {
@@ -130,7 +139,7 @@ section:nth-of-type(odd) {
 
 .main-container {
   max-width: 1200px;
-  padding: 10vh 10px;
+  padding: 10vh 10px 5vh 10px;
   margin: auto;
 }
 
@@ -276,7 +285,7 @@ section:nth-of-type(odd) {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   grid-gap: 8vw;
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .last-article-text {
@@ -322,7 +331,7 @@ section:nth-of-type(odd) {
   justify-self: center;
   align-self: center;
   margin: -4.5em;
-  padding: 4vh;
+  padding: 5px 4vh 10px 4vh;
   z-index: 1;
   background: white;
   grid-row: 2;
@@ -345,7 +354,7 @@ section:nth-of-type(odd) {
   display: none;
 }
 
-@media (min-width: 388px) {
+@media (min-width: 855px) {
   .bottom-images {
     display: grid;
     min-height: 400px;
@@ -373,7 +382,7 @@ section:nth-of-type(odd) {
     justify-self: center;
     align-self: center;
     margin: -5em;
-    padding: 5vh 10vh;
+    padding: 2vw 5vw;
     z-index: 1;
     background: white;
     grid-row: 1;
