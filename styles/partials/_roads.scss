@@ -1,0 +1,50 @@
+.roads {
+  @include section-theme-2;
+
+  &__article {
+    display: grid;
+    grid-template-rows: auto minmax(350px, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+    transition: grid-gap ease-in 200ms;
+    @media (min-width: 570px) {
+      min-height: 400px;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2vw;
+    }
+    @media (min-width: 890px) {
+      min-height: 400px;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10vw;
+    }
+    &--text {
+      align-self: center;
+      justify-self: center;
+    }
+    &--images {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      @media (min-width: 890px) {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(200px, 1fr)) 1fr;
+        grid-gap: 5px;
+      }
+    }
+    .image-wrapper:nth-child(4) {
+      grid-column: span 2;
+    }
+
+    .image-wrapper:nth-child(3) {
+      display: none;
+      @media (min-width: 890px) {
+        display: block;
+        grid-row: span 2;
+      }
+    }
+  }
+}

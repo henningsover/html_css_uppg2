@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+  background: #bdbdbd;
+  @include footer-theme;
+
+  &-logo-content {
+    @include logotype;
+  }
+
+  &__nav-bar ul {
+    @include nav__list;
+  }
+  &__nav-bar li {
+    @include nav__list--item;
+  }
+  &__nav-bar a {
+    @include links-style;
+    &:hover {
+      transform: scale(1.1);
+      background: lighten($color--theme-1-background, 10%);
+      border-radius: 5px;
+      transition: all ease-in 200ms;
+    }
+  }
+}

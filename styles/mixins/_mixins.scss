@@ -1,0 +1,73 @@
+@mixin logotype {
+  padding: 5px 30px;
+  text-decoration: none;
+  color: $color--theme-1-title;
+}
+
+@mixin links-style {
+  text-decoration: none;
+  padding: 0 5px;
+  color: $color--theme-1-text;
+  display: inline-block;
+}
+
+@mixin nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin nav__list--item {
+  display: inline;
+}
+
+@mixin section-theme-1 {
+  background-color: $color--theme-1-background;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $color--theme-1-title;
+  }
+  p {
+    color: $color--theme-1-text;
+  }
+}
+@mixin section-theme-2 {
+  background-color: $color--theme-2-background;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $color--theme-2-title;
+  }
+  p {
+    color: $color--theme-2-text;
+  }
+}
+
+@mixin pop-out-article-theme {
+  background-color: $color--pop-out-article-background;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $color--pop-out-article-title;
+  }
+  p {
+    color: $color--theme-1-text;
+  }
+}
+
+@mixin footer-theme {
+  background-color: $color--footer-background;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $color--theme-1-title;
+  }
+  p {
+    color: $color--theme-1-text;
+  }
+}

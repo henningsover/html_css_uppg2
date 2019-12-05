@@ -1,0 +1,39 @@
+.top-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-flow: column;
+  @include section-theme-1;
+  transition: all ease-in 1s;
+  @media (min-width: 460px) {
+    flex-flow: row;
+  }
+
+  &__logo {
+    flex-grow: 1;
+    margin: 1em 0px;
+
+    @media (min-width: 460px) {
+      margin: 0px;
+    }
+    &--content {
+      @include logotype;
+    }
+  }
+
+  &__nav-bar ul {
+    @include nav__list;
+  }
+  &__nav-bar li {
+    @include nav__list--item;
+  }
+  &__nav-bar a {
+    @include links-style;
+    transition: transform ease-in 200ms;
+    &:hover {
+      transform: scale(1.1);
+      background: darken($color--theme-1-background, 10%);
+      border-radius: 5px;
+    }
+  }
+}

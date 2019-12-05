@@ -1,0 +1,52 @@
+.main-header {
+  display: flex;
+  background-image: radial-gradient(circle at 50% 0, #3949518c, #0c202a86 93%),
+    url(../../assets/images/header/header-small.jpg);
+  background-size: cover;
+  background-position: center center;
+  flex-basis: 600px;
+  align-items: center;
+  justify-content: center;
+  @include section-theme-1;
+
+  h1,
+  p {
+    margin: 0px;
+  }
+  @media (min-width: 700px) {
+    display: block;
+    background-image: radial-gradient(circle at 50% 0, #39495173, #0c202a63 93%),
+      url(../../assets/images/header/header-large.jpg);
+    position: relative;
+  }
+
+  @media (min-width: 500px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 37ch;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+
+    @media (min-width: 700px) {
+      width: 45vw;
+      margin: auto;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+    }
+    @media (min-width: 1060px) {
+      width: 50ch;
+      margin: auto;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+    }
+  }
+}

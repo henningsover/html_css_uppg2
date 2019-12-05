@@ -1,0 +1,22 @@
+.weekly-album {
+  @include section-theme-1;
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
+
+  img {
+    flex-basis: 100px;
+    margin: 12px;
+    object-fit: contain;
+    @media (min-width: 388px) {
+      flex-basis: 170px;
+    }
+  }
+  .center-images {
+    text-align: center;
+  }
+}

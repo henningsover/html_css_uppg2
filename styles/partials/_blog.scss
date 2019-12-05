@@ -1,0 +1,31 @@
+.blog {
+  @include section-theme-2;
+  &__post {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 570px) {
+      flex-direction: row;
+      &:nth-of-type(odd) {
+        flex-flow: row-reverse;
+      }
+    }
+
+    &--text {
+      text-align: center;
+      align-self: center;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    &--text,
+    img {
+      flex: 1 1 50%;
+      padding: 10px;
+    }
+  }
+}

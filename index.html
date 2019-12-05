@@ -13,20 +13,30 @@
   </head>
   <body>
     <header class="top-header">
-      <div class="top-header-logo">
-        <a class="logo" href="#">Logo</a>
+      <div class="top-header__logo">
+        <a class="top-header__logo--content" href="#">TRAVELSON</a>
       </div>
-      <nav class="nav-bar">
-        <a href="#">Menu 1</a>
-        <a href="#">Menu 2</a>
-        <a href="#">Menu 3</a>
-        <a href="#">Menu 4</a>
+      <nav class="top-header__nav-bar">
+        <ul>
+          <li>
+            <a href="#">Menu 1</a>
+          </li>
+          <li>
+            <a href="#">Menu 2</a>
+          </li>
+          <li>
+            <a href="#">Menu 3</a>
+          </li>
+          <li>
+            <a href="#">Menu 4</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <header class="main-header">
         <div class="main-header-content">
-          <h1>Här är en stor rubrik</h1>
+          <h1>Life is Travel</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
             molestias atque recusandae, itaque voluptates saepe, voluptas sequi
@@ -34,16 +44,12 @@
           </p>
         </div>
       </header>
-      <section id="articles" class="main-section">
-        <div id="articleContainer" class="main-container">
-          <h2>Här är en rubrik</h2>
-          <article class="blog-posts">
-            <img
-              src="https://via.placeholder.com/350x250"
-              alt="Article image"
-            />
-            <div class="blog-posts-text">
-              <h3>Här är en rubrik</h3>
+      <section class="main__section blog">
+        <div class="main__container">
+          <h2>The world around the corner</h2>
+          <article class="blog__post">
+            <div class="blog__post--text">
+              <h3>Everywhere human</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
                 at quod, esse nulla amet delectus, repellat autem eaque eum
@@ -51,14 +57,14 @@
                 error recusandae?
               </p>
             </div>
+            <img
+              src="./assets/images/section-1/kajak.jpg"
+              alt="Article image"
+            />
           </article>
-          <article class="blog-posts">
-            <img
-              src="https://via.placeholder.com/350x250"
-              alt="Article image"
-            />
-            <div class="blog-posts-text">
-              <h3>Här är en rubrik</h3>
+          <article class="blog__post">
+            <div class="blog__post--text">
+              <h3>Explore</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
                 at quod, esse nulla amet delectus, repellat autem eaque eum
@@ -66,14 +72,14 @@
                 error recusandae?
               </p>
             </div>
+            <img
+              src="./assets/images/section-1/cliff.jpg"
+              alt="Article image"
+            />
           </article>
-          <article class="blog-posts">
-            <img
-              src="https://via.placeholder.com/350x250"
-              alt="Article image"
-            />
-            <div class="blog-posts-text">
-              <h3>Här är en rubrik</h3>
+          <article class="blog__post">
+            <div class="blog__post--text">
+              <h3>Under the sky</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
                 at quod, esse nulla amet delectus, repellat autem eaque eum
@@ -81,98 +87,112 @@
                 error recusandae?
               </p>
             </div>
+            <img
+              src="./assets/images/section-1/night.jpg"
+              alt="Article image"
+            />
           </article>
         </div>
       </section>
-      <section id="images" class="main-section">
-        <div class="main-container">
-          <h2>Här är en rubrik</h2>
-          <div class="images weekly-album">
+      <section class="weekly-album main__section">
+        <div class="main__container">
+          <h3>Where feets belong</h3>
+          <div class="images weekly-album__images">
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet1.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet2.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet3.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet4.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet5.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet6.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet7.jpg"
               alt="Small Picture"
             />
             <img
-              src="https://via.placeholder.com/140x140"
+              src="./assets/images/section-2-thumbnails/feet8.jpg"
               alt="Small Picture"
             />
           </div>
         </div>
       </section>
-      <section id="medium-images" class="main-section">
-        <article class="medium-images-article main-container">
-          <div class="medium-images-article-text">
-            <h4>Donec id elit non mi porta gravida at eget metus.</h4>
+      <section class="roads main__section">
+        <article class="roads__article main__container">
+          <div class="roads__article--text">
+            <h4>Roads through wilder</h4>
             <p>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
               eget lacinia odio sem nec elit. Donec id elit non mi porta gravida
               at eget metus.
             </p>
           </div>
-          <div class="medium-images-article-images">
+          <div class="roads__article--images">
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img image-wrapper__img--should-center"
+                src="./assets/images/section-3/road-1.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img image-wrapper__img--should-center"
+                src="./assets/images/section-3/road-2.png"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-3/road-4.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-3/road-3.jpg"
                 alt="Small Picture"
               />
             </div>
           </div>
         </article>
       </section>
-      <section class="last-article-grid">
-        <article class="last-article">
+      <section
+        class="double-article main__section main__section--double-article"
+      >
+        <article class="double-article__container">
           <div class="image-wrapper">
-            <img src="https://via.placeholder.com/2000x2000" alt="Big image" />
+            <img
+              class="image-wrapper__img image-wrapper__img--should-center"
+              src="./assets/images/section-4/tundra-large.jpg"
+              alt="Big image"
+            />
           </div>
-          <div class="last-article-text">
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <div class="double-article__container-text">
+            <h4>Beyond the pole</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
               fuga numquam optio tempore molestiae sint ad at amet. Ipsum, nisi!
             </p>
-            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Awakening nature</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
               libero cupiditate dolores magni odit consequuntur asperiores quod
@@ -181,65 +201,74 @@
           </div>
         </article>
       </section>
-      <section class="main-section-grid">
-        <div class="bottom-images main-container">
-          <div class="bottom-images-left">
+      <section
+        class="next-adventure main__section main__section--next-adventure"
+      >
+        <div class="next-adventure__container main__container">
+          <div class="next-adventure__container-left">
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-1.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-2.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-3.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-4.jpg"
                 alt="Small Picture"
               />
             </div>
           </div>
-          <div class="bottom-images-text">
-            <h4>Lorem ipsum dolor sit amet. Hulu hulu hulu.</h4>
+          <div class="next-adventure__container-text">
+            <h4>Don’t miss the next adventure</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              laborum et eveniet id? Ut et autem atque iusto sunt
-              exercitationem. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. adipisicing.
+              Duis mollis, est non commodo luctus, nisi erat patata porttitor
+              ligula, eget lacinia odio sem nec elit. Pator doctrus minoior lace
+              i dono. Patrul li leiche dolic petrolium.
             </p>
           </div>
-          <div class="bottom-images-right">
+          <div class="next-adventure__container-right">
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-5.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-6.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-7.jpg"
                 alt="Small Picture"
               />
             </div>
             <div class="image-wrapper">
               <img
-                src="https://via.placeholder.com/2000x2000"
+                class="image-wrapper__img"
+                src="./assets/images/section-5-collage/collage-8.jpg"
                 alt="Small Picture"
               />
             </div>
@@ -248,12 +277,22 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="#">Logo</a>
-      <nav class="nav-bar">
-        <a href="#">Menu 1</a>
-        <a href="#">Menu 2</a>
-        <a href="#">Menu 3</a>
-        <a href="#">Menu 4</a>
+      <a class="footer-logo-content" href="#">TRAVELSON</a>
+      <nav class="footer__nav-bar">
+        <ul>
+          <li>
+            <a href="#">Menu 1</a>
+          </li>
+          <li>
+            <a href="#">Menu 2</a>
+          </li>
+          <li>
+            <a href="#">Menu 3</a>
+          </li>
+          <li>
+            <a href="#">Menu 4</a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>

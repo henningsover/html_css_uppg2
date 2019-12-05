@@ -1,0 +1,31 @@
+.double-article {
+  @include section-theme-1;
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 8vw;
+    min-height: 500px;
+    padding-top: 5vh;
+    transition: grid-gap ease-in 200ms;
+    @media (min-width: 570px) {
+      padding-top: 0;
+      grid-gap: 2vw;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1185px) {
+      grid-gap: 8vw;
+    }
+
+    &-text {
+      align-self: center;
+      padding-left: 10px;
+      grid-row: 1;
+      @media (min-width: 570px) {
+        grid-column: 2;
+        max-width: 40ch;
+      }
+    }
+  }
+}

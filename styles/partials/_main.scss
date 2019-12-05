@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-flow: column;
+
+  &__container {
+    max-width: 1200px;
+    padding: 10vh 10px 5vh 10px;
+    margin: auto;
+
+    @media (min-width: 570px) {
+      padding-top: 5vh;
+    }
+  }
+
+  &__container h2,
+  &__container h3 {
+    text-align: center;
+  }
+
+  &__section {
+    @media (min-width: 388px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--double-article,
+    &--next-adventure {
+      display: block;
+    }
+  }
+}
